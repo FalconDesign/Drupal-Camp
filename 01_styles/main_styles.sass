@@ -1,0 +1,78 @@
+@import bourbon
+@import colors_and_mixins/mixin.sass
+@import Clear_Sans_web_font/clearsans_bold_macroman/stylesheet.css
+
+.container
+  width: 100%
+  max-width: 1200px
+  min-width: 960px
+  margin: 0px auto
+
+  header
+    position: relative
+    height: 60px
+    background: #42454f
+
+    .gradiend_overlay
+      position: absolute
+      width: 100%
+      height: 100%
+      @include linearGradient(bottom, #000000, #ffffff)
+      opacity: 0.1
+
+    .pattern_overlay
+      position: absolute
+      width: 100%
+      height: 100%
+      background: url('../01_pictures/pattern_overlay.png')
+      opacity: 0.1
+
+    .logo
+      +display(flex)
+      +justify-content(center)
+      +align-items(center)
+      height: 100%
+      color: #ffffff
+      letter-spacing: 0.035em
+      font:
+        family: 'clear_sansbold' !important
+        size: 14px
+
+      span
+        color: $green
+
+    nav
+      height: 100%
+      +display(flex)
+      +justify-content(flex-end)
+      +align-items(center)
+      a
+        text-decoration: none
+        color: #ffffff
+        letter-spacing: 0.035em
+        padding-left: 20px
+        font:
+          family: 'clear_sansbold' !important
+          size: 12px
+
+      button
+        border: 2px solid $green
+        color: $green
+        width: 140px
+        height: 28px
+        background: none
+        margin-left: 25px
+        letter-spacing: 0.035em
+        font:
+          family: 'clear_sansbold'
+
+      .line
+        background: #ffffff
+        height: 2px
+        width: 21px
+        margin-left: 25px
+
+      .lang_change
+        margin-left: 25px
+          a
+            margin: 0px
