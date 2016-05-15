@@ -1,0 +1,62 @@
+
+.speakers_container
+  height: 1195px
+  width: 100%
+  background: $box-color
+
+  .title
+    color: $header
+    letter-spacing: 0.035em
+    margin-top: 55px
+    font:
+      size: 35px
+      family: $clear-sans
+
+  .drupal_camp
+    line-height: 24px
+    margin-top: 30px
+    color: #202525
+    font:
+      family: $clear-sans-reg
+      size: 16px
+
+  .become_speaker.col-xs-4
+    +display(flex)
+    +justify-content(center)
+    .icon_container
+      position: relative
+      top: -20px
+      width: 200px
+      height: auto
+
+      button
+        position: absolute
+        top: 107px
+        left: 11px
+
+      .icon
+        position: absolute
+        left: 43px
+
+  .speakers_thumbnails
+    height: auto
+    background: pink
+    margin-top: 57px
+
+  .thumbnail
+    width: 270px
+    height: 362px
+    background: lightblue
+    margin-left: 30px
+
+  .thumbnail:first-child
+    margin-left: 0px  !important
+
+  .thumbnail:nth-child(5)
+    margin-left: 0px  !important
+
+  .thumbnail:nth-child(5),
+  .thumbnail:nth-child(6),
+  .thumbnail:nth-child(7),
+  .thumbnail:nth-child(8)
+    margin-top: 30px

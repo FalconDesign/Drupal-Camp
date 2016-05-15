@@ -10,23 +10,11 @@ body
   #page_container
     .container
       .row
-        header
-          .pattern_overlay  
-          .gradiend_overlay
-          .logo.col-xs-2
-            | DRUPALCAMP&nbsp; 
-            span KIEV’16
-          nav.col-xs-10
-            a(href="#") O DRUPALCAMP
-            a(href="#") СПИКЕРЫ
-            a(href="#") РАСПИСАНИЕ
-            a(href="#") СПОНСОРЫ
-            a(href="#") КОНТАКТИ
-            button(type="button") КУПИТЬ БИЛЕТ
-            .line
-            .lang_change
-              a(href="#") RU
-              a(href="#") EN
+        
+        include header/header.jade
+        
+        include speakers/speakers.jade
+      
             
           
           

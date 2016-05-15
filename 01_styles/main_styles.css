@@ -1,9 +1,24 @@
 @import url(Clear_Sans_web_font/clearsans_bold_macroman/stylesheet.css);
-.container {
-  width: 100%;
-  max-width: 1200px;
-  min-width: 960px;
-  margin: 0px auto;
+@import url(Clear_Sans_web_font/clearsans_regular_macroman/stylesheet.css);
+.big_button {
+  width: 200px;
+  height: 34px;
+  border: 0px;
+  border-radius: 20px;
+  background: #65bd6a;
+  color: #ffffff;
+  letter-spacing: 0.035em;
+  border: 2px solid #65bd6a;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "clear_sansbold";
+  font-size: 16px;
+}
+
+.big_button:hover {
+  background: transparent;
+  color: #65bd6a;
 }
 
 .container header {
@@ -61,7 +76,7 @@
   height: 100%;
   color: #ffffff;
   letter-spacing: 0.035em;
-  font-family: 'clear_sansbold' !important;
+  font-family: "clear_sansbold" !important;
   font-size: 14px;
 }
 
@@ -102,20 +117,39 @@
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 0.035em;
-  padding-left: 20px;
-  font-family: 'clear_sansbold' !important;
+  margin-left: 20px;
+  margin-top: 3px;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  font-family: "clear_sansbold" !important;
   font-size: 12px;
+}
+
+.container header nav a:hover {
+  border-bottom: 2px solid #65bd6a;
+}
+
+.container header nav a img {
+  margin-left: 5px;
+  margin-bottom: 2px;
 }
 
 .container header nav button {
   border: 2px solid #65bd6a;
+  border-radius: 15px;
   color: #65bd6a;
   width: 140px;
   height: 28px;
   background: none;
   margin-left: 25px;
   letter-spacing: 0.035em;
-  font-family: 'clear_sansbold';
+  font-family: "clear_sansbold";
+  font-size: 12px;
+}
+
+.container header nav button:hover {
+  background: #65bd6a;
+  color: #ffffff;
 }
 
 .container header nav .line {
@@ -127,4 +161,116 @@
 
 .container header nav .lang_change {
   margin-left: 25px;
+  margin-bottom: 3px;
+}
+
+.container header nav .lang_change a {
+  border: 0px;
+  font-size: 14px;
+}
+
+.container header nav .lang_change a:hover, .container header nav .lang_change a:focus {
+  color: #65bd6a;
+}
+
+.container header nav .lang_change a:first-child {
+  margin-left: 0px;
+}
+
+.container header nav .lang_change a:last-child {
+  margin-left: 14px;
+}
+
+.speakers_container {
+  height: 1195px;
+  width: 100%;
+  background: #f5f5f5;
+}
+
+.speakers_container .title {
+  color: #555555;
+  letter-spacing: 0.035em;
+  margin-top: 55px;
+  font-size: 35px;
+  font-family: "clear_sansbold";
+}
+
+.speakers_container .drupal_camp {
+  line-height: 24px;
+  margin-top: 30px;
+  color: #202525;
+  font-family: "clear_sansregular";
+  font-size: 16px;
+}
+
+.speakers_container .become_speaker.col-xs-4 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.speakers_container .become_speaker.col-xs-4 .icon_container {
+  position: relative;
+  top: -20px;
+  width: 200px;
+  height: auto;
+}
+
+.speakers_container .become_speaker.col-xs-4 .icon_container button {
+  position: absolute;
+  top: 107px;
+  left: 11px;
+}
+
+.speakers_container .become_speaker.col-xs-4 .icon_container .icon {
+  position: absolute;
+  left: 43px;
+}
+
+.speakers_container .speakers_thumbnails {
+  height: auto;
+  background: pink;
+  margin-top: 57px;
+}
+
+.speakers_container .thumbnail {
+  width: 270px;
+  height: 362px;
+  background: lightblue;
+  margin-left: 30px;
+}
+
+.speakers_container .thumbnail:first-child {
+  margin-left: 0px  !important;
+}
+
+.speakers_container .thumbnail:nth-child(5) {
+  margin-left: 0px  !important;
+}
+
+.speakers_container .thumbnail:nth-child(5),
+.speakers_container .thumbnail:nth-child(6),
+.speakers_container .thumbnail:nth-child(7),
+.speakers_container .thumbnail:nth-child(8) {
+  margin-top: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 960px;
+  margin: 0px auto;
 }
