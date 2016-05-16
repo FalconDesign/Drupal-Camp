@@ -136,6 +136,9 @@
 
 .container header nav button {
   border: 2px solid #65bd6a;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 15px;
   color: #65bd6a;
   width: 140px;
@@ -203,54 +206,34 @@
   font-size: 16px;
 }
 
-.speakers_container .become_speaker.col-xs-4 {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-}
-
-.speakers_container .become_speaker.col-xs-4 .icon_container {
+.speakers_container .become_speaker .icon_container {
   position: relative;
   top: -20px;
   width: 200px;
   height: auto;
 }
 
-.speakers_container .become_speaker.col-xs-4 .icon_container button {
+.speakers_container .become_speaker .icon_container button {
   position: absolute;
   top: 107px;
-  left: 11px;
 }
 
-.speakers_container .become_speaker.col-xs-4 .icon_container .icon {
+.speakers_container .become_speaker .icon_container .icon {
   position: absolute;
-  left: 43px;
+  left: 33px;
 }
 
 .speakers_container .speakers_thumbnails {
   height: auto;
-  background: pink;
   margin-top: 57px;
 }
 
 .speakers_container .thumbnail {
   width: 270px;
   height: 362px;
-  background: lightblue;
+  background: #ffffff;
   margin-left: 30px;
+  padding: 0px;
 }
 
 .speakers_container .thumbnail:first-child {
@@ -266,6 +249,179 @@
 .speakers_container .thumbnail:nth-child(7),
 .speakers_container .thumbnail:nth-child(8) {
   margin-top: 30px;
+}
+
+.speakers_container .photo_container {
+  width: 100%;
+  height: 240px;
+}
+
+.speakers_container .photo_container .speaker_1,
+.speakers_container .photo_container .speaker_2 {
+  width: 135px;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+}
+
+.speakers_container .photo_container .speaker_1 .button_info,
+.speakers_container .photo_container .speaker_2 .button_info {
+  width: 100%;
+  background: rgba(101, 189, 106, 0.9);
+  color: #ffffff;
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  cursor: pointer;
+  font-family: "clear_sansregular";
+  font-size: 14px;
+}
+
+.speakers_container .photo_container .speaker_1 .button_info a,
+.speakers_container .photo_container .speaker_2 .button_info a {
+  text-decoration: none;
+  color: white;
+}
+
+.speakers_container .photo_container .speaker_3,
+.speakers_container .photo_container .speaker_4,
+.speakers_container .photo_container .speaker_5 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+}
+
+.speakers_container .photo_container .speaker_3 .button_info,
+.speakers_container .photo_container .speaker_4 .button_info,
+.speakers_container .photo_container .speaker_5 .button_info {
+  width: auto;
+  background: rgba(101, 189, 106, 0.9);
+  color: #ffffff;
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  cursor: pointer;
+  font-family: "clear_sansregular";
+  font-size: 14px;
+}
+
+.speakers_container .photo_container .speaker_3 .button_info a,
+.speakers_container .photo_container .speaker_4 .button_info a,
+.speakers_container .photo_container .speaker_5 .button_info a {
+  text-decoration: none;
+  color: white;
+}
+
+.speakers_container .speaker_1 {
+  background: url("../01_pictures/speakers/speaker_1.jpg");
+}
+
+.speakers_container .speaker_2 {
+  background: url("../01_pictures/speakers/speaker_2.jpg");
+}
+
+.speakers_container .speaker_3 {
+  background: url("../01_pictures/speakers/speaker_3.jpg");
+}
+
+.speakers_container .speaker_4 {
+  background: url("../01_pictures/speakers/speaker_4.jpg");
+}
+
+.speakers_container .speaker_5 {
+  background: url("../01_pictures/speakers/speaker_5.jpg");
+}
+
+.speakers_container .content_container {
+  width: auto;
+  height: 56px;
+  line-height: 21px;
+  margin-left: 17px;
+  margin-top: 16px;
+  color: #484848;
+  font-size: 16px;
+  font-family: "clear_sansbold";
+}
+
+.speakers_container .lang_container {
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+}
+
+.speakers_container .lang_container .lang {
+  float: right;
+  color: #888888;
+  font-family: "clear_sansregular";
+  font-size: 15;
 }
 
 .container {
