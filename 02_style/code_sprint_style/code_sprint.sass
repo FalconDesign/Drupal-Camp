@@ -1,0 +1,60 @@
+.code_sprint
+  padding: 0px
+  height: 453px
+  background: url('../01_pictures/code_sprint/bg_1.jpg')
+  background-repeat: no-repeat
+
+  .children_logo
+    height: 100%
+    background: url('../01_pictures/code_sprint/bg.jpg')
+    background-repeat: no-repeat
+
+  .sprint
+    padding-left: 0px
+    padding-right: 0px
+
+    .title
+      +display(flex)
+      +justify-content(center)
+      margin-top: 94px
+      h1
+        color: #ffffff
+        letter-spacing: 0.035em
+        font:
+          size: 42px
+          family: $clear-sans
+
+    .sub_title
+      +display(flex)
+      +justify-content(center)
+      margin-top: -33px
+      h3
+        color: #ffffff
+        letter-spacing: 0.035em
+        font:
+          family: $clear-sans
+
+    .button_cont
+      +display(flex)
+      +justify-content(center)
+      margin-top: 30px
+
+  .logos_companies
+      height: 93px
+      background: rgba(48, 49, 55, 0.8)
+      +display(flex)
+      +justify-content(center)
+      margin-top: 63px
+      border-top: 2px solid #3e4651
+
+      .logo_cont
+        img
+          height: 39px
+          width: auto
+        width: 100%
+        max-width: 400px
+        height: 100%
+        +display(flex)
+        +justify-content(space-around)
+        +align-items(center)
+        @include filter(contrast(0%))

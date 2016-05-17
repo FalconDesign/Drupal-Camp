@@ -1,0 +1,74 @@
+.sponsors_section
+  .sponsors
+    height: 542px
+    padding: 0
+
+    .title
+      color: $header
+      letter-spacing: 0.035em
+      line-height: 35px
+      margin-top: 83px
+      font:
+        size: 35px
+        family: $clear-sans
+
+    .quote
+      color: $header
+      border-left: 3px solid $header
+      +box-sizing(border-box)
+      line-height: 25px
+      padding-left: 31px
+      margin-top:83px
+      font:
+        size: 18px
+        family: $clear-sans
+
+    button
+      margin-top: 90px
+
+    .golden_sponsors
+      .sponsor_header
+        color: #fac42b
+
+    .silver_sponsors
+      +display(flex)
+      +justify-content(flex-end)
+      .sponsor_header
+        color: #aeaeae
+
+    .bronze_sponsors
+      .sponsor_header
+        color: #cd7f32
+
+    .media_sponsors
+      +display(flex)
+      +justify-content(flex-end)
+      .sponsor_header
+        color: $header
+
+    .fourth,
+    .second
+      +display(flex)
+      +justify-content(flex-end)
+
+    .sponsors_logo
+      width: 100%
+      max-width: 535px
+      height: 25px
+      margin-top: 23px
+      +display(flex)
+      +align-items(center)
+      +flex-wrap(wrap)
+
+
+      img
+        margin-left: percentage(40px/570px)
+        @include filter(contrast(0%))
+        cursor: pointer
+
+        &:hover
+          @include filter(contrast(100%))
+
+
+      img:first-child
+        margin-left: 0

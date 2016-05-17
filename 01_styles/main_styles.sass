@@ -4,9 +4,17 @@
 @import Clear_Sans_web_font/clearsans_regular_macroman/stylesheet.css
 @import header_style/header.sass
 @import speakers_style/speakers.sass
+@import apply_style/apply.sass
+@import sponsors_style/sponsors.sass
+@import tickets_style/tickets.sass
+@import contact_style/contact.sass
+@import footers_style/footer.sass
+@import ../02_style/code_sprint_style/code_sprint.sass
+
 
 .container
   width: 100%
   max-width: 1200px
-  min-width: 960px
-  margin: 0px auto
+
+  @media (max-width: 960px)
+    width: 960px !important

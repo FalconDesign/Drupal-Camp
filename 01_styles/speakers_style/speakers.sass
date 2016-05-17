@@ -40,10 +40,11 @@
     margin-top: 57px
 
   .thumbnail
-    width: 270px
+    width: 100%
+    max-width: percentage(270px/1169px)
     height: 362px
     background: #ffffff
-    margin-left: 30px
+    margin-left: percentage(30px/1200px)
     padding: 0px
 
   .thumbnail:first-child
@@ -64,7 +65,7 @@
 
     .speaker_1,
     .speaker_2
-      width: 135px
+      width: 50%
       height: 100%
       float: left
       background-repeat: no-repeat
@@ -89,7 +90,8 @@
         a
           text-decoration: none
           color: white
-
+        &:hover
+          background: #205081
 
     .speaker_3,
     .speaker_4,
@@ -98,6 +100,7 @@
       height: 100%
       background-repeat: no-repeat
       background-position: center center
+      background-size: cover
       +display(flex)
       +align-items(flex-end)
 
@@ -119,6 +122,8 @@
           text-decoration: none
           color: white
 
+        &:hover
+          background: #205081
 
   @each $icon in speaker_1, speaker_2, speaker_3, speaker_4, speaker_5,
     .#{$icon}
@@ -140,10 +145,39 @@
     margin-top: 20px
     width: auto
     height: auto
+    +clearfix
+
+    img
+      float: right
+      margin-right: 18px
+      margin-top: 4px
 
     .lang
       float: right
       color: #888888
+      margin-right: 17px
       font:
         family: $clear-sans-reg
         size: 15
+
+  .show_more
+    +display(flex)
+    +justify-content(center)
+
+    button
+      margin-top: 50px
+
+      &:hover
+        .sprite_more
+          background-position: 0px 17px
+
+
+      .sprite_more
+        display: block
+        float: left
+        width: 16px
+        height: 16px
+        background: url('../01_pictures/speakers/sprite_more.png')
+        margin-left: 15px
+        margin-right: -11px
+        margin-top: 3px

@@ -41,7 +41,7 @@
         text-decoration: none
         color: #ffffff
         letter-spacing: 0.035em
-        margin-left: 20px
+        margin-left: percentage(20px/970px)
         margin-top: 3px
         padding-bottom: 1px
         border-bottom: 2px solid transparent
@@ -49,7 +49,8 @@
           family: $clear-sans !important
           size: 12px
 
-        &:hover
+        &:hover,
+        &:focus
           border-bottom: 2px solid $green
 
         img

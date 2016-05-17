@@ -1,0 +1,60 @@
+.contact_section
+  height: 413px
+  padding: 0px
+
+  .contact
+    background: #fcfcfc
+    height: 100%
+
+    .title
+      width: 300px
+      text-align: center
+      color: $header
+      letter-spacing: 0.035em
+      margin-top: 40px
+      font:
+        family: $clear-sans
+        size: 35px
+    .box
+      width: 100%
+      +display(flex)
+      margin-top: 25px
+
+      .content
+        color: #888888
+        letter-spacing: 0.035em
+        font:
+          family: $clear-sans
+          size: 14px
+
+        span
+          color: #202525
+          font:
+            family: $clear-sans-reg
+            size: 18px
+      .img_container
+        margin-top: 6px
+        img
+          padding-right: 21px
+
+      .tech_container
+        width: 181px
+        +display(flex)
+        +flex-wrap(wrap)
+        +justify-content(space-between)
+        .tech_logo
+          +size(26px)
+          background: #cacaca
+          +display(flex)
+          +justify-content(center)
+          +align-items(center)
+          cursor: pointer
+
+          &:hover
+            background: #205081
+
+
+  .google_map
+    background: url('../01_pictures/contact/google.jpg') -55px 0px 
+    background-repeat: no-repeat
+    height: 100%
