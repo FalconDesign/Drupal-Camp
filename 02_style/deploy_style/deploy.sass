@@ -1,0 +1,143 @@
+.deploy_section
+  height: 549px
+
+  .main_title
+    padding-left: 0px
+    padding-right: 0px
+
+    .title
+      color: $content
+      line-height: 46px
+      margin-top: 57px
+      font:
+        size: 35px
+        family: $clear-sans
+
+
+    .content
+      color: $content
+      margin-top: 28px
+      font:
+        size: 18px
+        family: $clear-sans-reg
+
+      .sub_content
+        width: 100%
+        max-width: 440px
+        +display(flex)
+        +justify-content(space-between)
+        margin-top: 30px
+
+        .lang
+          color: #8d8d8d
+          font:
+            size: 15px
+            family: $clear-sans
+
+  .speakers_button_cont
+    padding-left: 0px
+    padding-right: 0px
+    button
+      margin-top: 70px
+      width: 221px !important
+
+  .speaker_container
+    height: 389px
+    margin-top: 70px
+    .speaker_1,
+    .speaker_2
+      width: 100%
+      max-width: 400px
+      height: 180px
+      +display(flex)
+      +flex(wrap)
+      +justify-content(space-between)
+
+    .speaker_1
+      .face
+        +size(180px)
+        background: url('../01_pictures/speakers/speaker_2.jpg') center center
+        background-repeat: no-repeat
+
+      .info
+        width: 100%
+        max-width: 190px
+
+        .field
+          width: 100%
+          border-bottom: 1px solid #aeaeae
+          line-height: 25px
+          padding-bottom: 5px
+          .name
+            color: #202525
+            font:
+              size: 16px
+              family: $clear-sans-reg
+          .occupation
+            color: #aeaeae
+            font:
+              size: 14px
+              family: $clear-sans-reg
+
+      .tech_container
+        width: 183px
+        +display(flex)
+        +flex-wrap(wrap)
+
+        .tech_logo
+          margin-top: 13px
+          +size(26px)
+          background: #cacaca
+          cursor: pointer
+          +display(flex)
+          +justify-content(center)
+          +align-items(center)
+          margin-left: 3px
+
+          &:hover
+            background: #205081
+
+    .speaker_2
+      margin-top: 30px
+      .face
+        +size(180px)
+        background: url('../01_pictures/speakers/speaker_1.jpg') center center
+        background-repeat: no-repeat
+
+      .info
+        width: 100%
+        max-width: 190px
+
+        .field
+          line-height: 25px
+          border-bottom: 1px solid #aeaeae
+          padding-bottom: 5px
+          .name
+            color: #202525
+            font:
+              size: 16px
+              family: $clear-sans-reg
+          .occupation
+            color: #aeaeae
+            font:
+              size: 14px
+              family: $clear-sans-reg
+
+
+      .tech_container
+        width: 183px
+        +display(flex)
+        +flex-wrap(wrap)
+
+        .tech_logo
+          margin-top: 13px
+          +size(26px)
+          background: #cacaca
+          cursor: pointer
+          +display(flex)
+          +justify-content(center)
+          +align-items(center)
+          margin-left: 3px
+
+          &:hover
+            background: #205081

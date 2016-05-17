@@ -1230,13 +1230,287 @@ footer .de_web .de_web_logo {
   width: auto;
 }
 
+.deploy_section {
+  height: 549px;
+}
+
+.deploy_section .main_title {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.deploy_section .main_title .title {
+  color: #484848;
+  line-height: 46px;
+  margin-top: 57px;
+  font-size: 35px;
+  font-family: "clear_sansbold";
+}
+
+.deploy_section .main_title .content {
+  color: #484848;
+  margin-top: 28px;
+  font-size: 18px;
+  font-family: "clear_sansregular";
+}
+
+.deploy_section .main_title .content .sub_content {
+  width: 100%;
+  max-width: 440px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  margin-top: 30px;
+}
+
+.deploy_section .main_title .content .sub_content .lang {
+  color: #8d8d8d;
+  font-size: 15px;
+  font-family: "clear_sansbold";
+}
+
+.deploy_section .speakers_button_cont {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.deploy_section .speakers_button_cont button {
+  margin-top: 70px;
+  width: 221px !important;
+}
+
+.deploy_section .speaker_container {
+  height: 389px;
+  margin-top: 70px;
+}
+
+.deploy_section .speaker_container .speaker_1,
+.deploy_section .speaker_container .speaker_2 {
+  width: 100%;
+  max-width: 400px;
+  height: 180px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+  -moz-box-flex: wrap;
+  box-flex: wrap;
+  -webkit-flex: wrap;
+  -moz-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+.deploy_section .speaker_container .speaker_1 .face {
+  height: 180px;
+  width: 180px;
+  background: url("../01_pictures/speakers/speaker_2.jpg") center center;
+  background-repeat: no-repeat;
+}
+
+.deploy_section .speaker_container .speaker_1 .info {
+  width: 100%;
+  max-width: 190px;
+}
+
+.deploy_section .speaker_container .speaker_1 .info .field {
+  width: 100%;
+  border-bottom: 1px solid #aeaeae;
+  line-height: 25px;
+  padding-bottom: 5px;
+}
+
+.deploy_section .speaker_container .speaker_1 .info .field .name {
+  color: #202525;
+  font-size: 16px;
+  font-family: "clear_sansregular";
+}
+
+.deploy_section .speaker_container .speaker_1 .info .field .occupation {
+  color: #aeaeae;
+  font-size: 14px;
+  font-family: "clear_sansregular";
+}
+
+.deploy_section .speaker_container .speaker_1 .tech_container {
+  width: 183px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.deploy_section .speaker_container .speaker_1 .tech_container .tech_logo {
+  margin-top: 13px;
+  height: 26px;
+  width: 26px;
+  background: #cacaca;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin-left: 3px;
+}
+
+.deploy_section .speaker_container .speaker_1 .tech_container .tech_logo:hover {
+  background: #205081;
+}
+
+.deploy_section .speaker_container .speaker_2 {
+  margin-top: 30px;
+}
+
+.deploy_section .speaker_container .speaker_2 .face {
+  height: 180px;
+  width: 180px;
+  background: url("../01_pictures/speakers/speaker_1.jpg") center center;
+  background-repeat: no-repeat;
+}
+
+.deploy_section .speaker_container .speaker_2 .info {
+  width: 100%;
+  max-width: 190px;
+}
+
+.deploy_section .speaker_container .speaker_2 .info .field {
+  line-height: 25px;
+  border-bottom: 1px solid #aeaeae;
+  padding-bottom: 5px;
+}
+
+.deploy_section .speaker_container .speaker_2 .info .field .name {
+  color: #202525;
+  font-size: 16px;
+  font-family: "clear_sansregular";
+}
+
+.deploy_section .speaker_container .speaker_2 .info .field .occupation {
+  color: #aeaeae;
+  font-size: 14px;
+  font-family: "clear_sansregular";
+}
+
+.deploy_section .speaker_container .speaker_2 .tech_container {
+  width: 183px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.deploy_section .speaker_container .speaker_2 .tech_container .tech_logo {
+  margin-top: 13px;
+  height: 26px;
+  width: 26px;
+  background: #cacaca;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  margin-left: 3px;
+}
+
+.deploy_section .speaker_container .speaker_2 .tech_container .tech_logo:hover {
+  background: #205081;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 959px) {
   .container {
-    width: 960px !important;
+    width: 959px !important;
   }
 }
